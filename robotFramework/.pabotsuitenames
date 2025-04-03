@@ -1,0 +1,6 @@
+datasources:78ec1457ce5066d7e594150fafd750564fc80499
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:b9a163e96f5af1e721da7759969419de9aa53841
+--suite Register
+--suite Suites.RegTest

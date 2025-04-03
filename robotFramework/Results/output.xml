@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.1.1 (Python 3.7.9 on win32)" generated="20240804 19:56:40.587" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Register" source="C:\Babi\robotFramework\TestCases\Register.robot">
+<test id="s1-s1-t1" name="RegisterTest" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240804 19:54:50.819" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<msg timestamp="20240804 19:54:51.258" level="WARN">The chromedriver version (126.0.6478.126) detected in PATH at C:\Babi\Drivers\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.73); currently, chromedriver 127.0.6533.88 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240804 19:54:50.819" endtime="20240804 19:56:37.429"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20240804 19:56:37.437" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</msg>
+<msg timestamp="20240804 19:56:37.440" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</msg>
+<status status="FAIL" starttime="20240804 19:56:37.429" endtime="20240804 19:56:37.533"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${link_Reg}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.533" endtime="20240804 19:56:37.533"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_first_name}</arg>
+<arg>David</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.533" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_last_name}</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_phone}</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>davidjohn@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_address}</arg>
+<arg>canada</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_city}</arg>
+<arg>Toronto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_state}</arg>
+<arg>Brampton</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.541"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_postalCode}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.541" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_password}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_confirmPassword}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_signIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>register.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Thank you for registering.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.546" endtime="20240804 19:56:37.546"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:37.548" endtime="20240804 19:56:37.548"/>
+</kw>
+<status status="FAIL" starttime="20240804 19:54:50.819" endtime="20240804 19:56:37.548">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</status>
+</test>
+<status status="FAIL" starttime="20240804 19:54:50.644" endtime="20240804 19:56:37.551"/>
+</suite>
+<suite id="s1-s2" name="RegTest" source="C:\Babi\robotFramework\TestCases\RegTest.robot">
+<test id="s1-s2-t1" name="LoginTest" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240804 19:54:50.819" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<msg timestamp="20240804 19:54:51.252" level="WARN">The chromedriver version (126.0.6478.126) detected in PATH at C:\Babi\Drivers\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.73); currently, chromedriver 127.0.6533.88 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240804 19:54:50.819" endtime="20240804 19:56:38.063"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20240804 19:56:38.072" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</msg>
+<msg timestamp="20240804 19:56:38.079" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</msg>
+<status status="FAIL" starttime="20240804 19:56:38.064" endtime="20240804 19:56:38.079"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginUserName}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:38.079" endtime="20240804 19:56:38.079"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_loginPassword}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:38.079" endtime="20240804 19:56:38.079"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_signIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:38.079" endtime="20240804 19:56:38.079"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Login: Mercury Tours</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:38.079" endtime="20240804 19:56:38.079"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20240804 19:56:38.079" endtime="20240804 19:56:38.079"/>
+</kw>
+<status status="FAIL" starttime="20240804 19:54:50.819" endtime="20240804 19:56:38.079">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</status>
+</test>
+<status status="FAIL" starttime="20240804 19:54:50.644" endtime="20240804 19:56:38.095"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="FAIL" starttime="20240804 19:54:50.629" endtime="20240804 19:56:38.098"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Register">Suites.Register</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="RegTest">Suites.RegTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240804 19:54:51.258" level="WARN">The chromedriver version (126.0.6478.126) detected in PATH at C:\Babi\Drivers\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.73); currently, chromedriver 127.0.6533.88 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240804 19:56:37.437" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</msg>
+<msg timestamp="20240804 19:54:50.819" level="ERROR">Error in file 'C:\Babi\robotFramework\TestCases\RegTest.robot' on line 3: Resource file 'C:Babi
+obotFrameworkResourcesLoginKeywords.robot' does not exist.</msg>
+<msg timestamp="20240804 19:54:51.252" level="WARN">The chromedriver version (126.0.6478.126) detected in PATH at C:\Babi\Drivers\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.73); currently, chromedriver 127.0.6533.88 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240804 19:56:38.072" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71142EEA2+31554]
+	(No symbol) [0x00007FF7113A7ED9]
+	(No symbol) [0x00007FF71126872A]
+	(No symbol) [0x00007FF71123D995]
+	(No symbol) [0x00007FF7112E44D7]
+	(No symbol) [0x00007FF7112FC051]
+	(No symbol) [0x00007FF7112DCDD3]
+	(No symbol) [0x00007FF7112AA33B]
+	(No symbol) [0x00007FF7112AAED1]
+	GetHandleVerifier [0x00007FF711738B1D+3217341]
+	GetHandleVerifier [0x00007FF711785AE3+3532675]
+	GetHandleVerifier [0x00007FF71177B0E0+3489152]
+	GetHandleVerifier [0x00007FF7114DE776+750614]
+	(No symbol) [0x00007FF7113B375F]
+	(No symbol) [0x00007FF7113AEB14]
+	(No symbol) [0x00007FF7113AECA2]
+	(No symbol) [0x00007FF71139E16F]
+	BaseThreadInitThunk [0x00007FFA3369257D+29]
+	RtlUserThreadStart [0x00007FFA3532AF28+40]
+</msg>
+</errors>
+</robot>

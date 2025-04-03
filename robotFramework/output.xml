@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.7.9 on win32)" generated="20240810 11:29:33.580" rpa="false" schemaversion="4">
+<suite id="s1" name="Practise" source="C:\Babi\robotFramework\TestCases\practise.robot">
+<test id="s1-t1" name="Add Numbers" line="5">
+<kw name="Add Numbers" library="MyLibrary">
+<var>${result}</var>
+<arg>2</arg>
+<arg>3</arg>
+<msg timestamp="20240810 11:29:33.595" level="INFO">${result} = 5</msg>
+<status status="PASS" starttime="20240810 11:29:33.595" endtime="20240810 11:29:33.595"/>
+</kw>
+<kw name="Should Not Be True" library="BuiltIn">
+<arg>${result}</arg>
+<arg>5</arg>
+<doc>Fails if the given condition is true.</doc>
+<msg timestamp="20240810 11:29:33.595" level="FAIL">5</msg>
+<status status="FAIL" starttime="20240810 11:29:33.595" endtime="20240810 11:29:33.595"/>
+</kw>
+<status status="FAIL" starttime="20240810 11:29:33.595" endtime="20240810 11:29:33.595">5</status>
+</test>
+<status status="FAIL" starttime="20240810 11:29:33.580" endtime="20240810 11:29:33.595"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Practise">Practise</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
